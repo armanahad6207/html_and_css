@@ -1,0 +1,12 @@
+  
+ block level element
+ -------------------
+        >start with new line.
+        >take whole width of screen
+        e.g. div , p , section , hr etc.
+
+ inline level element
+ --------------------
+        >start in the same line.
+        >only take space which is required.
+        e.g. span , a , i , img etc
