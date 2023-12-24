@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid properties</title>
+    <style>
+        .grid-container{
+           height: 400px;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            background-color: aquamarine;
+          
+            
+            
+           
+            /* grid-auto-rows: minmax(100px,auto); */
+            
+           
+        }
+        .grid-container >div {
+          
+           
+           text-align: center;
+           
+           margin-top: 10px;
+           margin-left: 10px;
+           font-size: 30px;
+           font-weight: 900;
+            background-color: rgb(95, 131, 162);
+        }
+        /* .grid-container .grid-items1{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 3;
+        } */
+        .grid-container .grid-items10{
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 5;
+        }
+
+        .wraper > div{
+            background-color: chartreuse;
+           
+            width: 200px;
+            text-align: center;
+            padding-top: 40px;
+            margin-top: 20px;
+            
+        
+        }
+        .wraper{
+            display: grid;
+            grid-template-columns: repeat(3, 2fr);
+            grid-auto-rows: minmax(100px,auto);
+        }
+        .container > div{
+
+            background-color: aquamarine;
+
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,auto);
+            column-gap: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        
+        <div class="grid-items1">1</div>
+        <div class="grid-items2">2</div>
+        <div class="grid-items3">3</div>
+        <div class="grid-items4">4</div>
+        <div class="grid-items5">5</div>
+           
+        <div class="grid-items6">6</div>
+        <div class="grid-items7">7</div>
+        <div class="grid-items8">8</div>
+        <div class="grid-items9">9</div>
+        <div class="grid-items10">10</div>
+        <div class="grid-items11">11</div>
+        <div class="grid-items12">12</div>
+        <div class="grid-items13">13</div>
+        <div class="grid-items14">14</div>
+        <div class="grid-items15">15</div>
+    </div>
+    <div class="wraper">
+        <div>
+            zero
+            <p> this is wraper gridd</p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim expedita commodi optio.
+            </p><p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim expedita commodi optio.
+            </p><p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim expedita commodi optio.
+            </p>
+           
+        </div>
+        <div>one</div>
+        <div>two</div>
+        <div> three</div>
+        <div>one</div>
+        <div>two</div>
+        <div> three</div>
+        <div>one</div>
+        <div>two</div>
+        <div> three</div>
+    </div>
+    <div class="container">
+        <div class="grid-items6">6</div>
+        <div class="grid-items7">7</div>
+        <div class="grid-items8">8</div>
+        <div class="grid-items9">9</div>
+    </div>
+</body>
+</html>

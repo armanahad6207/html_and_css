@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nested flex box</title>
+    <style>
+      header {
+        display: flex;
+        flex-direction: row;
+        height: 60px;
+        /* border: 1px solid red; */
+        justify-content: space-between;
+        /* background-color: #0f172a; */
+      }
+      .left-section {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+      }
+      .menu {
+        height: 35px;
+        margin-left: 20px;
+      }
+      .logo {
+        height: 30px;
+      }
+      .middle-section {
+        
+        flex: 1;
+        margin: 0 80px 0 50px;
+        width: 300px;
+        display: flex;
+        align-items: center;
+        padding: 0 0 0 12px;
+        
+      }
+      .search-icon{
+        width: 70px;
+        height: 44px;
+        margin-left: 1px;
+        display: flex;
+        align-items: center;
+        border: 1px solid rgb(219, 218, 218);
+        border-left: none !important;
+        background-color: #f7f7f7;
+        
+        
+      }
+      .search-icon img{
+        width: 40px;
+        margin-left: 9px;
+      }
+      .voice-icon{
+        width: 50px;
+        height: 45px;
+        margin-left: 20px;
+        border-radius: 50%;
+        border: none;
+        background-color: #f7f7f7;
+        flex-shrink: 0;
+        
+      }
+      .search-input{
+        height: 41px;
+        flex: 1;
+        font-size: 15px;
+        border: none;
+        outline: 1px solid rgb(219, 218, 218);
+        /* border-radius: 3px; */
+        padding-left: 5px;
+        box-shadow: inset 1px 2px 5px rgba(142, 140, 140, 0.15);
+        width: 0;
+        
+    
+      }
+      .search-input:hover{
+        outline:1px solid rgb(107, 109, 108); 
+        border-radius: none;
+      }
+      .search-input::placeholder{
+        font-family: sans-serif;
+        font-size: 16px;
+        color: #0d162b;
+        
+      }
+      
+      .right-section {
+        width: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 20px;
+        /* flex-shrink: 0; */
+        
+
+      }
+      .right-section > img{
+        width: 30px;
+      }
+      .profile{
+        width: 50px !important;
+        border-radius: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+
+        <!-- left section-->
+
+      <div class="left-section">
+        <img src="hamburger-menu.svg" alt="" class="menu" />
+        <img src="youtube-logo.svg" alt="" class="logo" />
+      </div>
+
+      <!-- middle-section -->
+
+
+      <div class="middle-section">
+        <input type="text" placeholder="Search" class="search-input" />
+
+        <button class=" search-icon">
+            <img src="./search.svg" alt=""  />
+        </button>
+
+        <button class="voice-icon">
+          <img src="./voice-search-icon.svg" alt=""  />
+        </button>
+      </div>
+
+      <!-- right-section -->
+
+
+      <div class="right-section">
+
+        <img src="./upload.svg" alt="" class="upload">
+        <img src="./youtube-apps.svg" alt="" class="apps">
+        <img src="./notifications.svg" alt="" class="notification">
+        <img src="profile1.png" alt="" class="profile">
+      </div>
+    </header>
+  </body>
+</html>

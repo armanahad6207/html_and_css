@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vertical and horizontal layout</title>
+</head>
+<style>
+    .align{
+        display: inline-block;
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+    .vert-1{
+        border: 1px solid black;
+        width: 300px;
+        height: 100px;
+        background-color: lightblue;
+        padding: 3px;
+    }
+    .vert-2{
+        border: 1px solid black;
+        width: 300px;
+        height: 50px;
+        padding: 3px;
+        
+        
+    }
+    .vert-2 .hor-1{
+        width: 80px;
+        height: 45px;
+        border: 1px solid red;
+        display: inline-block;
+        padding: 2px;
+        
+    }
+    .vert-2 .hor-2{
+        width: 160px;
+        height: 45px;
+        border: 1px solid red;
+        display: inline-block;
+        padding: 2px;
+    }
+    .vert-2 .hor-2 .hor-2-ver-1{
+        border: 1px solid red ;
+        height: 10px;
+        margin-top: 2px;
+    }
+    .vert-2 .hor-2 .hor-2-ver-2{
+        border: 1px solid red ;
+        height: 10px;
+        margin-top: 2px;
+    }
+    .vert-2 .hor-2 .hor-2-ver-3{
+        border: 1px solid red ;
+        height: 10px;
+        margin-top: 2px;
+    }
+    .video{
+        font-family: sans-serif;
+        display: inline-block;
+        margin-left: 20px;
+        margin-bottom: 40px;
+        
+    }
+    .thumbnail-img .thumbnail{
+        width: 350px;
+    }
+    .video-info{
+
+      display: inline-block; 
+      margin-top: 6px;
+      
+        
+    }
+      .video-info .profile-img {
+        display: inline-block;
+        width: 50px;
+        vertical-align: top;
+        
+    }
+    .video-info .video-desc{
+        display: inline-block;
+        margin-left: 12px;
+      
+    }
+    .video-info .profile-img .profile{
+        width: 50px;
+        border-radius: 50px;
+        margin-bottom: 20px;
+        
+    }
+    
+    .video-info .video-desc .title{
+        color: black;
+        font-weight: 600;
+        margin: 0px;
+        line-height:20px;
+        width: 250px;
+    
+    
+    }
+    .video-info .video-desc .author{
+        margin-bottom: 0px;
+        font-size: 14px;
+        color: rgb(113, 112, 112);
+        
+    }
+    .video-info .video-desc .views{
+        margin: 0px;
+        font-size: 14px;
+        color: rgb(111, 110, 110);
+    }
+
+
+</style>
+<body>
+    <div class="align">
+        <div class="vert-1">
+    
+        </div>
+        <div class="vert-2">
+     <div class="hor-1">
+    
+     </div>
+     <div class="hor-2">
+        <div class="hor-2-ver-1">
+            
+        </div>
+        <div class="hor-2-ver-2">
+            
+        </div> <div class="hor-2-ver-3">
+            
+        </div>
+     </div>
+        </div>
+       </div>
+       <div class="align">
+        <div class="vert-1">
+    
+        </div>
+        <div class="vert-2">
+     <div class="hor-1">
+    
+     </div>
+     <div class="hor-2">
+        <div class="hor-2-ver-1">
+            
+        </div>
+        <div class="hor-2-ver-2">
+            
+        </div> <div class="hor-2-ver-3">
+            
+        </div>
+     </div>
+        </div>
+       </div>
+   <div class="align">
+    <div class="vert-1">
+
+    </div>
+    <div class="vert-2">
+ <div class="hor-1">
+
+ </div>
+ <div class="hor-2">
+    <div class="hor-2-ver-1">
+        
+    </div>
+    <div class="hor-2-ver-2">
+        
+    </div> <div class="hor-2-ver-3">
+        
+    </div>
+ </div>
+    </div>
+   </div>
+   <div class="align">
+    <div class="vert-1">
+
+    </div>
+    <div class="vert-2">
+ <div class="hor-1">
+
+ </div>
+ <div class="hor-2">
+    <div class="hor-2-ver-1">
+        
+    </div>
+    <div class="hor-2-ver-2">
+        
+    </div> <div class="hor-2-ver-3">
+        
+    </div>
+ </div>
+    </div>
+   </div>
+   <div class="align">
+    <div class="vert-1">
+
+    </div>
+    <div class="vert-2">
+ <div class="hor-1">
+
+ </div>
+ <div class="hor-2">
+    <div class="hor-2-ver-1">
+        
+    </div>
+    <div class="hor-2-ver-2">
+        
+    </div> <div class="hor-2-ver-3">
+        
+    </div>
+ </div>
+    </div>
+   </div>
+   <div class="align">
+    <div class="vert-1">
+
+    </div>
+    <div class="vert-2">
+ <div class="hor-1">
+
+ </div>
+ <div class="hor-2">
+    <div class="hor-2-ver-1">
+        
+    </div>
+    <div class="hor-2-ver-2">
+        
+    </div> <div class="hor-2-ver-3">
+        
+    </div>
+ </div>
+    </div>
+   </div>
+   <br><br><br>
+
+
+
+
+
+
+<div class="video">
+    <div class="thumbnail-img">
+        <img src="youtube-project\thumbnail-img\th1.png" alt="" class="thumbnail">
+    </div>
+    <div class="video-info">
+        <div class="profile-img">
+            <img src="youtube-project/profile-img/pro1.png" alt="" class="profile">
+        </div>
+        <div class="video-desc">
+            <p class="title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="author">
+                Marques Brownlee
+            </p>
+            <p class="views">
+                3.4M views &#183; 6 months ago
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="video">
+    <div class="thumbnail-img">
+        <img src="youtube-project\thumbnail-img\th1.png" alt="" class="thumbnail">
+    </div>
+    <div class="video-info">
+        <div class="profile-img">
+            <img src="youtube-project/profile-img/pro1.png" alt="" class="profile">
+        </div>
+        <div class="video-desc">
+            <p class="title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="author">
+                Marques Brownlee
+            </p>
+            <p class="views">
+                3.4M views &#183; 6 months ago
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="video">
+    <div class="thumbnail-img">
+        <img src="youtube-project\thumbnail-img\th1.png" alt="" class="thumbnail">
+    </div>
+    <div class="video-info">
+        <div class="profile-img">
+            <img src="youtube-project/profile-img/pro1.png" alt="" class="profile">
+        </div>
+        <div class="video-desc">
+            <p class="title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="author">
+                Marques Brownlee
+            </p>
+            <p class="views">
+                3.4M views &#183; 6 months ago
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="video">
+    <div class="thumbnail-img">
+        <img src="youtube-project\thumbnail-img\th1.png" alt="" class="thumbnail">
+    </div>
+    <div class="video-info">
+        <div class="profile-img">
+            <img src="youtube-project/profile-img/pro1.png" alt="" class="profile">
+        </div>
+        <div class="video-desc">
+            <p class="title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+            </p>
+            <p class="author">
+                Marques Brownlee
+            </p>
+            <p class="views">
+                3.4M views &#183; 6 months ago
+            </p>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

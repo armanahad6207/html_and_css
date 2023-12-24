@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display property</title>
+    <style>
+        .thumbnail {
+            display: block;
+        }
+        .video-author,.video-stats{
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- display consist three value
+        1>black element => Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width;
+        2>inline-block element =>	Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values;
+        3> inline element =>	Displays an element as an inline element (like <span>). Any height and width properties will have no effect;
+    
+    -->
+
+    <input type="text" placeholder="Search" />
+    <img src="img1.png" alt="" class="thumbnail" />
+    <!-- strong is a inline element -->
+    <p class="video-title">this is <strong>most curisious</strong>  things of the wakanda.</p>
+    <p class="video-author">Michell Marchs</p>
+    <p class="video-stats">25k views &#183; 2 days ago</p>
+</body>
+
+</html>

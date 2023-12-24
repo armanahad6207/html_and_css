@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+</head>
+<body>
+    <div style="display: flex;
+    flex-direction: row;
+
+    
+    ">
+        <div class="div1" style="background-color: aquamarine;
+        flex: 1;
+        
+        
+        
+        "> div1 <p>text</p></div>
+        <div class="div2" style="background-color: blueviolet; flex: 2;"> div2</div>
+    </div>
+
+    <div>
+
+        <div>100px</div>
+    </div>
+    <br><br>
+    <style>
+        header{
+            display: flex;
+            flex-direction: row;
+            height: 60px;
+            border: 1px solid red;
+            justify-content: space-between;
+        }
+        .left-section{
+            background-color: aquamarine;
+            width: 140px;
+        }
+        .middle-section{
+            background-color: blueviolet;
+            flex: 1;
+            margin: 0 80px 0 50px;
+            max-width: 500px;
+        }
+        .right-section{
+            background-color: chartreuse;
+            width: 220px;
+        
+        }
+    </style>
+
+    <header>
+        <div class="left-section"> left-section</div>
+        <div class="middle-section">middle-section</div>
+        <div class="right-section">right-section</div>
+    </header>
+</body>
+</html>

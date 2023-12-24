@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lession thirteen exercise</title>
+    <style>
+       
+        .flex-container{
+            height: 400px;
+            display: flex;
+            
+            
+        }
+        .item1{
+            background-color: cadetblue;
+        
+            width: 1000px;
+            
+            
+        }
+        
+        .item2{
+            
+            width: 2000px;
+            background-color: brown;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .flex-item{
+            height: 400px;
+            font-size: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        
+        }
+        span{
+            background-color: black;
+            color: white;
+            
+        }
+        
+        .flex-item2{
+            display: flex;
+            justify-content: space-between;
+            font-size: 100px;
+            
+        }
+        .flex-item3{
+            font-size: 100px;
+            margin-top: 20px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item1">
+        <div class="flex-item">
+            <span>item1</span>
+        </div>
+        </div>
+        <div class="item2">
+            <div class="flex-item3">
+                <b>row1</b>
+            </div>
+            
+            <div class="flex-item2">
+                
+                <span>row2</span>
+                <span>row2</span>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

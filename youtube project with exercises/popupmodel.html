@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup Modal</title>
+    <style>
+      body {
+        background-color: #f4f4f4;
+      }
+
+      .overlay {
+        display: none;
+
+        position: fixed;
+        top: 250px;
+        left: 500px;
+        border-radius: 5px;
+        width: 300px;
+        height: 150px;
+        box-shadow: 1px 2px 7px rgb(163, 162, 162);
+      }
+
+      .modal {
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+        border: 1px solid rgb(167, 165, 165);
+        color: #258406;
+      }
+
+      .close-btn {
+        cursor: pointer;
+
+        position: absolute;
+        right: 12px;
+
+        font-size: 20px;
+        font-weight: 600;
+        background-color: rgba(111, 109, 109, 0.5);
+        color: rgb(11, 11, 11);
+        height: 20px;
+        width: 20px;
+        text-align: center;
+        padding-bottom: 2px;
+        margin-top: 5px;
+        border-radius: 2px;
+      }
+
+      /* Style for demo purposes */
+      .open-modal-btn {
+        position: fixed;
+        top: 300px;
+        left: 600px;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Button to open the modal -->
+
+    <button class="open-modal-btn" onclick="openModal()">Open Modal</button>
+
+    <!-- The Modal -->
+    <div class="overlay" id="modalOverlay">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+
+      <div class="modal">
+        <h2>This is a Popup Modal</h2>
+        <p>Here's some content for the modal.</p>
+      </div>
+    </div>
+
+    <!-- JavaScript to toggle the modal -->
+    <script>
+      function openModal() {
+        document.getElementById("modalOverlay").style.display = "flex";
+      }
+
+      function closeModal() {
+        document.getElementById("modalOverlay").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

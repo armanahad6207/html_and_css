@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex box</title>
+    <style>
+      .flex-container {
+        background-color: rgb(236, 233, 233);
+        display: flex;
+        /* flex-direction: column; */
+        /* flex-direction: row-reverse; */
+        gap: 20px;
+        /* flex-wrap: wrap; */
+        /* --->>The flex-flow property is a shorthand property for setting both the 
+        flex-direction and flex-wrap properties. */
+         flex-flow: row wrap;
+         
+         /* <p>The "align-items: baseline;" aligns the flex items such as their baselines aligns:</p> */
+         align-items: baseline;
+      }
+
+      .flex-container > div {
+        background-color: aqua;
+        width: 70px;
+        /* height: 70px; */
+        text-align: center;
+        line-height: 70px;
+        font-size: 30px;
+        color: blue;
+      }
+    </style>
+  </head>
+  <style></style>
+  <body>
+    <!-- The flex container properties are:
+    flex-direction
+    flex-wrap
+    flex-flow
+    justify-content
+    align-items
+    align-content -->
+
+    <div class="flex-container">
+      <div class="flex-items1">1</div>
+      <div class="flex-items2">2</div>
+      <div class="flex-items3">3 <br> 23</div>
+      <div class="flex-items4">4</div>
+      <div class="flex-items5">5</div>
+      <div class="flex-items6">6</div>
+      <div class="flex-items7">7</div>
+      <div class="flex-items8">8</div>
+      
+    </div>
+  </body>
+</html>

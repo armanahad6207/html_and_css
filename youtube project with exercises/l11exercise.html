@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lession 11 execise</title>
+    <style>
+        
+        .grid-container{
+            display: grid;
+            grid-template-columns: 200px 70px;
+            margin-bottom: 20px;
+        }
+        .grid-container2{
+            display: grid;
+            grid-template-columns: 50px 1fr 75px;
+        }
+        .griditems1{
+            background-color: aquamarine;
+            color: white;
+        }
+        .griditems2{
+            background-color: rgb(6, 107, 73);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="griditems1">
+            200px
+        </div>
+        <div class="griditems2">
+            70px
+        </div>
+
+    </div>
+    <div class="grid-container2">
+        <div class="griditems1">
+            50px
+        </div>
+        <div class="griditems2">
+            remaning space
+        </div>
+        <div class="griditems1">
+            75px
+        </div>
+
+    </div>
+    <style>
+        .grid-container3{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 10px;
+            margin-top: 20px;
+
+        }
+        .griditems{
+            background-color:rgb(125, 127, 128) ;
+        }
+        .profile1{
+            width: 500px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            
+        }
+       
+        .profile .profile-img img{
+            width: 150px;
+            height: 150px;
+        }
+        .profile-about{
+            width: 150px;
+            height: 100px;
+            margin-top: -10.7px;
+            box-shadow: 2px 5px 6px rgb(199, 196, 196);
+        }
+        .profile-about .name{
+            font-weight: 600;
+            font-family: sans-serif;
+            font-size: 18px;
+            margin: 7px 0px 0px 10px;
+            padding-top: 3px;
+        }
+        .profile-about .profile-info img{
+            width: 25px;
+            height: 25px;
+            border-radius: 50px;
+            
+            
+
+        }
+        .profile-about .profile-info .img{
+            display: inline-block;
+            
+            
+        }
+        .profile-about .profile-info .friends{
+            display: inline-block;
+            vertical-align: top;
+            font-size: 14px;
+            margin-left: 3px;
+            padding-top: 3px;
+            color: rgb(134, 135, 135);
+            
+        }
+        .profile-info{
+            margin: 5px 0px 5px 7px;
+        }
+        .profile-about .addfriends{
+            margin: 5px 0px 5px 10px;
+        }
+        .profile-about .addfriends button{
+            padding: 6px 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(33, 107, 205);
+            color: white;
+            font-weight: 600;
+        }
+    </style>
+    <div class="grid-container3">
+        <div class="griditems">col1</div>
+        <div class="griditems">col2</div>
+        <div class="griditems">col3</div>
+        <div class="griditems">col4</div>
+        <div class="griditems">col5</div>
+        <div class="griditems">col6</div>
+        <div class="griditems">col7</div>
+        <div class="griditems">col8</div>
+    </div>
+    <br>
+    <br>
+    <hr>
+<div class="profile1">
+    <div class="profile">
+        <div class="profile-img">
+            <img src="cat2.png" alt="">
+        </div>
+        <div class="profile-about">
+            <div class="name">
+                oliver
+            </div>
+            <div class="profile-info">
+                <div class="img">
+                    <img src="cat2.png" alt="">
+                </div>
+                <div class="friends">
+                    2 mututal friends
+                </div>
+            </div>
+            <div class="addfriends">
+                <button> Add Friends</button>
+            </div>
+        </div>
+    </div>
+     
+     <div class="profile">
+        <div class="profile-img">
+            <img src="cat3.png" alt="">
+        </div>
+        <div class="profile-about">
+            <div class="name">
+                oliver
+            </div>
+            <div class="profile-info">
+                <div class="img">
+                    <img src="cat2.png" alt="">
+                </div>
+                <div class="friends">
+                    2 mututal friends
+                </div>
+            </div>
+            <div class="addfriends">
+                <button> Add Friends</button>
+            </div>
+        </div>
+    </div>
+     <div class="profile">
+        <div class="profile-img">
+            <img src="cat2.png" alt="">
+        </div>
+        <div class="profile-about">
+            <div class="name">
+                oliver
+            </div>
+            <div class="profile-info">
+                <div class="img">
+                    <img src="cat2.png" alt="">
+                </div>
+                <div class="friends">
+                    2 mututal friends
+                </div>
+            </div>
+            <div class="addfriends">
+                <button> Add Friends</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

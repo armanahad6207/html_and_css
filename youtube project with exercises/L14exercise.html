@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>postion fixed property</title>
+    <style>
+        body{
+        margin: 0;
+        height: 600px;
+        background-color: rgba(210, 209, 209, 0.8);
+        }
+        .bottom-right{
+            position: fixed;
+            background-color: green;
+            color: white;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 200px;
+        }
+        .model{
+            
+            display: flex;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            
+            
+        }
+        .card{
+            font-family: sans-serif;
+            width: 400px;
+            /* border: 1px solid red; */
+            padding-left: 20px;
+            padding-bottom: 20px;
+            background-color: white;
+            box-shadow: 2px 3px 4px rgb(84, 82, 82);
+        }
+    </style>
+</head>
+<body>
+    <div class="bottom-right" >
+        right sidebar
+    </div>
+   <div class="model">
+    <div class="card">
+        <h1>model title</h1>
+        <h3>this is model</h3>
+        <button>close</button>
+    </div>
+   </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID DOCUMENT</title>
+    <style>
+     .grid-container > div{
+        background-color: aquamarine;
+        font-size: 30px;
+        padding: 20px;
+        text-align: center;
+     }
+     .grid-container{
+        display: grid;
+        grid-template-columns: repeat(5,auto);
+        grid-template-rows: 100px 100px 100px;
+        gap: 10px;
+        grid-template-areas: 'area area ' 'area area ';
+     
+     }
+     .grid-items1{
+        background-color: rgb(246, 239, 239) !important;
+        /* grid-column-start:1 ;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 4; */
+        /* span define how much column or u need */
+        /* grid-column: 1/ span 2;  */
+        /* grid-row: 1/4; */
+        grid-area: area ;
+     }
+     .grid-items8{
+        background-color: black !important;
+        color: white;
+        /* grid-column: 2/span 3; */
+        /* grid-row: 1/ span 5; */
+        /* grid-row-start / grid-column-start / grid-row-end / grid-column-end */
+        /* grid-area: 1 /2 / span 4 /span 3; */
+        
+     }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-items1">1</div>
+        <div class="grid-items2">2</div>
+        <div class="grid-items3">3</div>
+        <div class="grid-items4">4</div>
+        <div class="grid-items5">5</div>
+        <div class="grid-items6">6</div>
+        <div class="grid-items7">7</div>
+        <div class="grid-items8">8</div>
+        <div class="grid-items9">9</div>
+        <div class="grid-items10">10</div>
+        <div class="grid-items11">11</div>
+        <div class="grid-items12">12</div>
+        <div class="grid-items13">13</div>
+        <div class="grid-items14">14</div>
+        <div class="grid-items15">15</div>
+        
+       
+       
+    </div>
+    <br><br><hr><hr>
+    <!-- css grid area property -->
+    <style>
+        .grid-area{
+            display:grid;
+            grid-template-areas: 'header header header header header ''menu main main right right' 
+                                     
+                                  'menu footer footer footer footer';
+                                  gap: 10px;
+                                  background-color: aquamarine;
+                                  padding: 10px;
+        }
+        .grid-header{grid-area: header;}
+        .grid-menu{grid-area:menu;}
+        .grid-main{grid-area: main;}
+        .grid-right{grid-area: right;}
+        .grid-footer{grid-area: footer;}
+
+        
+        .grid-area > div{
+            background-color: blueviolet;
+            padding: 30px;
+            text-align: center;
+
+        }
+    </style>
+    <div class="grid-area">
+        <div class="grid-header">HEADER</div>
+        <div class="grid-menu">MENU</div>
+        <div class="grid-main">MAIN</div>
+        <div class="grid-right">RIGHT</div>
+        <div class="grid-footer">FOOTER</div>
+
+    </div>
+
+</body>
+</html>

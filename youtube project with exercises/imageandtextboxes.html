@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .thumbnail
+        {
+            width: 300px;
+            transition: box-shadow .30s ,border-radius .30s;
+        }
+        .thumbnail:hover{
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 3px 4px 12px rgb(143, 142, 142);
+        }
+        .search-bar{
+            font-size: 20px;
+            
+        }
+    </style>
+   
+</head>
+<body>
+    <img class="thumbnail" src="./thumbnail.png" alt="">
+    <input class="search-bar" type="text" placeholder="Search">
+</body>
+</html>

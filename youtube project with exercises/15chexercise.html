@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position absolute and relative</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+        
+        }
+        .model{
+            position: relative;
+            width: 500px;
+            height: 200px;
+            background-color: rgb(131, 130, 129);
+            margin-top: 100px;
+            
+        }
+        .close{
+            position: absolute;
+            top: -15px;
+            left: -10px;
+            font-size: 30px;
+            background-color: black;
+            color: white;
+            width: 35px;
+            text-align: center;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .add_time{
+        position: absolute;
+        bottom: 12px;
+        right: 12px;
+        background-color: black;
+        color: white;
+        padding: 3px 4px ;
+        border-radius: 3px;
+        cursor: pointer;
+        }
+        .card{
+            margin-top: 100px;
+        }
+        .shirt_pic img{
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+        }
+        .shirt_pic{
+            position: relative;
+            /* border: 1px solid black; */
+        }
+        .offer{
+            position: absolute;
+            top: 20px;
+            right: 0;
+            background-color: black;
+        color: white;
+        padding: 3px 4px ;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: sans-serif;
+        }
+        .buy{
+            position: absolute;
+            top: 270px;
+            left: 0;
+            right: 0;
+            bottom: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(234, 234, 234, 0.6);
+        }
+        .buy button{
+         
+            padding: 7px 18px;
+            background-color: white;
+            font-weight: 600;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="model">
+        <div class="close">&times;</div>
+        <div class="add_time">00:12</div>
+    </div>
+
+
+
+    <div class="card">
+        <div class="shirt_pic">
+            <img src="../shirt.png" alt="">
+            <span class="offer">
+                20% OFF
+            </span>
+            <div class="buy">
+                <button>Add to Cart</button>
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+</html>
