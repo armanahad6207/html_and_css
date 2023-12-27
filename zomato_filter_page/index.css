@@ -1,0 +1,253 @@
+body{
+    margin-top: 60px;
+    font-family: sans-serif;
+    
+}
+p{
+    margin: 0;
+}
+.header-continer{
+    background-color: #CE0505;
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    font-family:sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    z-index: 1;
+}
+.left-section{
+    margin-left: 30px;
+}
+.home-logo{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+.right-section{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-right: 40px;
+    color: white;
+    font-size: 14px;
+}
+.login-btn{
+    cursor: pointer;
+}
+.create-account-btn{
+    border: 1px solid white;
+    padding: 8px 8px 10px 8px;
+    cursor: pointer;
+}
+
+
+.front-title{
+    font-size: 36px;
+    font-weight: 600;
+    color: #192F60;
+    font-family: sans-serif;
+    position: fixed;
+    left: 100px;
+    top: 60px;
+}
+.filter-section{
+    position: fixed;
+    top: 110px;
+    left: 110px;
+    bottom: 10px;
+    width: 200px;
+    padding-top: 14px;
+    padding-left: 18px;
+    box-shadow: 0px 3px 6px rgb(206, 204, 204);
+    
+    
+}
+.filter-txt{
+    font-size: 18px;
+    color: #192F60;
+    font-weight: 600;
+    font-family: sans-serif;
+    padding: 2px 0;
+}
+.location{
+    padding: 6px 0;
+    font-size: 16px;
+    color: #192F60;
+}
+.input-location select{
+    width: 170px;
+    height: 30px;
+    border: 1px solid rgb(107, 105, 105);
+    padding-left: 10px;
+    font-size: 13px;
+    color: rgb(135, 133, 133);
+}
+.cuisine{
+    margin-top: 10px;
+    margin-bottom: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+}
+.cuisine .title{
+    font-size: 16px;
+    color:rgb(59, 58, 58);
+    font-weight: 500;
+    padding-bottom: 4px;
+}
+.cuisine-content{
+    display: flex;
+    gap: 3px;
+    align-items: center;
+   
+
+}
+.select-place{
+    font-size: 14px;
+    color: rgb(162, 161, 161);
+}
+.check-btn{
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgb(162, 161, 161);
+}
+.coast{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 14px;
+}
+
+
+.coast-content{
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    
+}
+.coast .coast-content .check-btn{
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgb(162, 161, 161);
+    border-radius: 50%;
+}
+.coast .title{
+    font-size: 16px;
+    color:rgb(59, 58, 58);
+    font-weight: 500;
+    padding-bottom: 4px;
+}
+.sort-item{
+    margin-top: 10px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+.sort-content{
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+
+/* product */
+
+.product{
+    position: absolute;
+    left: 450px;
+    top: 117px;
+    box-shadow: 0px 3px 6px lightgray;
+    padding: 20px 25px;
+}
+.product2{
+    position: absolute;
+    left: 450px;
+    top: 380px;
+    box-shadow: 0px 3px 6px lightgray;
+    padding: 20px 25px;
+}
+
+
+.product-menu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 1px solid rgb(201, 199, 199);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.product-menu .product-pic .food-pic{
+   width: 100px;
+   height: 100px;
+   border-radius: 10px;
+   object-fit: cover;
+}
+.product-name{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.product-name .name{
+    font-size: 24px;
+    font-weight: 600;
+    color: #192F60;
+    font-family: sans-serif;
+   
+}
+.product-name .fort{
+    color:#192F60; 
+    font-size: 14px; 
+    padding-top: 5px;    
+}
+.product-name .address{
+    color: #636F88;
+    font-size: 14px;
+}
+.product-cuisine,.total-price{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    
+}
+.product-price{
+    display: flex;
+    flex-direction: column;
+    
+}
+ .text,.coast-two{
+    margin-top: 10px;
+    color: #636F88;
+    font-size: 14px;
+}
+.bakery{
+    color: #192F60;
+    font-size: 14px;
+}
+
+.rupes{
+    margin-left: -40px;
+    color:#192F60;
+    font-size: 14px;
+}
+
+
+
