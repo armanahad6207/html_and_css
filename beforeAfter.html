@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before after in css</title>
+    <style>
+        html,body{
+            height: 100%;
+            width: 100%;
+            background-color: #000;
+            display: flex;
+             align-items: center;
+             justify-content: center; 
+        
+        }
+    #main{
+        height: 40%;
+        width: 50%;
+        background-color: chocolate;
+    }
+    .curser{
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    position: absolute;
+    transform: translate(-50%,-50%) scale(0);
+    transition: transform ease .3s;
+    z-index: 1000;
+
+    }
+
+    #main::after{
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 60%;
+    background-color: rgb(160, 132, 112);
+    transition: z-index ease 1s;
+    top: 25%;
+    left: 20%;
+    opacity: 0;
+    transition: opacity ease .5s ; 
+    }
+    #main:hover::after{
+        opacity: 1;
+    
+    }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="curser">
+        </div>
+    </div>
+    <script>
+    var main=document.querySelector("#main");
+    var curser=document.querySelector(".curser")
+    
+    main.addEventListener("mouseenter",function(dets){
+        main.addEventListener("mousemove",function(dets){
+        // console.log("x"+dets.x)
+        // console.log("y"+dets.y)
+        
+        curser.style.transform="translate(-10%,-50%) scale(1)"
+        curser.style.left=dets.x+"px"
+        curser.style.top=dets.y+"px"
+
+
+    });
+   });
+   main.addEventListener("mouseleave",function(){
+          curser.style.transform="translate(-50%,-50%) scale(0)";
+   });
+   
+
+    
+    </script>
+</body>
+</html>
