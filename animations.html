@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations in css</title>
+<style>
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   html,body{
+    height: 100%;
+    width: 100%;
+   }
+    .container{
+        width: 200px;
+        height: 150px;
+        background-color: #1124d58a;
+        position: absolute;
+        animation-name:move;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-fill-mode:forwards; /*forwards,backwards,both */
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+        animation-direction: alternate;
+    }
+
+    @keyframes move{ 
+
+        /* from{
+         left: 0;
+         transform: rotate(0deg);
+        }
+        to{
+            left: 60%;
+             transform: rotate(360deg);
+            background-color: #d511cb8a;
+            
+        } */
+        0%{
+        left: 0;
+        top: 0;
+         transform: rotate(0deg);
+        }
+        50%{
+        left: 60%;
+        top: 0;
+         transform: rotate(360deg);
+         background-color: #d511cb8a;
+        }
+        100%{
+        top: 70%;
+        left: 60%;
+        transform: rotate(360deg);
+        background-color: chocolate;
+       
+        }
+        
+    }
+</style>
+
+</head>
+<body>
+    <div class="container">
+
+    </div>
+</body>
+</html>
