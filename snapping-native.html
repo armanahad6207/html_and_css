@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snapping native</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+            
+        }
+        .container{
+            width: 60%;
+            height: 40%;
+            box-sizing: border-box;
+            background-color: darkgray;
+            display: flex;
+           overflow-y: hidden;
+           overflow-x: auto;
+           white-space: nowrap;
+           scroll-snap-type: x mandatory;
+             }
+        .a{
+            flex-shrink: 0; 
+            width: 40%;
+            height: 90%;
+            background-color: red;
+            scroll-snap-align: start;
+          
+        }
+        .a:nth-child(2n){
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+        <div class="a"></div>
+    </div>
+</body>
+</html>
