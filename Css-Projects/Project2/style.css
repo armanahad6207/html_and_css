@@ -17,6 +17,7 @@ body {
   padding-top: 0.1px;
   position: relative;
   padding-bottom: 1vw;
+  overflow: hidden;
 }
 
 /* navbar */
@@ -131,7 +132,7 @@ nav h3 {
 
 .scroll {
   width: 100%;
-  height: 40vh;
+  height: 18vw;
 
   padding: 1vw;
   white-space: nowrap;
@@ -151,8 +152,8 @@ nav h3 {
   animation-iteration-count: infinite;
 }
 .container img {
-  height: 80%;
-  width: 15%;
+  height: 13vw;
+  width: 13vw;
   border-radius: 50%;
   object-fit: cover;
 
@@ -172,19 +173,24 @@ nav h3 {
 
 /* choose */
 .choose {
-  height: 10vh;
+  height: 5.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
 
   width: 100%;
-  gap: 1.1vw;
+  gap: 0.5vw;
   border-bottom: 2px solid #000;
   border-top: 2px solid #000;
   overflow-x: auto;
 }
 .choose span {
-  padding: 0.4vw 0.6vw;
+  height: 2.8vw;
+  width: 2.8vw;
+  font-size: 1.8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .choose span:hover {
   border: 1.5px solid #000;
@@ -194,9 +200,10 @@ nav h3 {
 
 .choose span:nth-child(1) {
   border: none;
-  font-size: 1.7vw;
+  font-size: 1.8vw;
   margin-right: 3vw;
   border-bottom: 3px solid #000;
+  width: 6vw;
   letter-spacing: 0.2vw;
   font-weight: 600;
   line-height: 15px;
@@ -571,38 +578,87 @@ footer {
   }
 
   .scroll {
-    width: 100%;
-    height: 40vh;
-  
+    width: 150%;
+    height: 25vh;
+
     padding: 1vw;
     white-space: nowrap;
     overflow-x: hidden;
     overflow-y: hidden;
   }
   .container {
-    height: 70%;
+    height: 130%;
+    gap: 1vw;
     width: fit-content;
-    display: inline-flex;
-    justify-content: space-between;
-    padding-left: 10px;
-    gap: 1VW;
-    align-items: center;
-    animation-name: scroll-animate;
-    animation-duration: 20s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+
+    padding-bottom: 30px;
   }
   .container img {
-    height: 40%;
-    width: 18%;
-    border-radius: 50%;
-    object-fit: cover;
-  
-    justify-content: space-between;
-    align-items: center;
+    height: 70%;
+    width: 15%;
+  }
+  .choose {
+    height: 10vw;
+    padding: 0vw 4vw;
+  }
+  .choose span {
+    height: 4vw;
+    width: 4vw;
+    font-size: 2vw;
+  }
+  .choose span:hover {
+    border: 1px solid #000;
   }
 
+  .choose span:nth-child(1) {
+    border-bottom: 2px solid #000;
+  }
+
+  .models {
+    height: 70vw;
+    width: 100%;
+
+   
+   
+    gap: 2vw;
+  }
+  .model1 {
+    height: 65vw;
+    width: 55%;
+
+   
+    
+  }
+  .model2{
+    gap: .2vw;
+  }
  
+  .model2 .model2-img {
+    height: 47vw;
+
+  }
+
+  .model2-desc {
+  
+    display: flex;
+    flex-direction: column;
+    gap: .6vw;
+  }
+ 
+
+  .model2-desc h4 {
+    width: 100%;
+    font-size: 2.3vw;
+    line-height: 2.5vw;
+    letter-spacing: .3px;
+    
+  }
+  .model2-desc h6 {
+    width: 100%;
+    font-weight: 500;
+    line-height: 1.8vw;
+    font-size: 1.6vw;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 1000px) {
